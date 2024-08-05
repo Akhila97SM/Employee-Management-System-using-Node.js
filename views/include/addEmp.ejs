@@ -1,0 +1,211 @@
+<div id="addData" class="position-absolute addemploye-card">
+    <div class="row d-flex justify-content-center ">
+      <div class="column col-lg-5 mt-3 ">
+        <div class="card rounded-4 ">
+          <header class="d-flex justify-content-between p-4 align-items-center">
+            <h4 class="head">Add Employee</h4>
+            <button type="button" class="btn-close p-3" onclick="addformClose()" aria-label="Close"></button>
+          </header>
+
+
+
+          <div class="body px-4 ">
+            <div class="row">
+              <div class="col-lg-12">
+                <label for="upload" class="upload form-label  mb-3 p-4 d-flex flex-column align-items-center rounded-3">
+                  <i class="fa-solid fa-upload"></i>
+                  <h6>Upload Image</h6>
+                  <p class="mb-1 d-flex text-align-center">PNG,JPG files are allowed</p>
+                  <input type="file" name="Image" class="form-control file" id="upload" onchange="avatarPreview()" />
+                  <img src="" id="imgpreview">
+                </label>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3 mb-3 ">
+                <label for="select-menu" class="form-label text">Salutation</label>
+
+                <select class="form-select option rounded-3 select " aria-label="Default select example"
+                  id="Salutation">
+                  <option selected value="">select</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Ms">Ms</option>
+
+                </select>
+                <div class="error"></div>
+              </div>
+
+              <div class="col-lg-4 mb-3">
+                <label for="frstname" class=" form-label text mb-2">First Name
+                </label>
+                <input type="text" id="frst-Name" class="form-control rounded-3 select" placeholder="john" />
+                <div class="error"></div>
+              </div>
+
+              <div class="col-lg-5 mb-3">
+                <label for="exampleInputEmail1" class="form-label text">Last Name
+                </label>
+                <input type="text" id="last-Name" class="form-control rounded-3 select" placeholder="Doe" />
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <div class="mb-3">
+                  <label for="emailinput" class="form-label text">Email address</label>
+                  <input type="text" id="email-address" class="form-control rounded-3 select"
+                    placeholder="mail@simmmple.com" />
+                  <div class="error"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-3">
+                <div class="mb-3">
+                  <label for="mobileinput" class="form-label text">Mobile Number
+                  </label>
+                  <input type="mobile number" id="mobile-number" class="form-control rounded-3 select"
+                    placeholder="enter mobile number" />
+                  <div class="error"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6 mb-3">
+                <label for="username" class="form-label text">Username</label>
+                <input type="text" id="username" class="form-control " placeholder="enter user name">
+                <div class="error"></div>
+              </div>
+
+
+
+              <div class="col-lg-6 mb-3">
+                <label for="password" class="form-label text">password</label>
+                <input type="password" id="password" class="form-control " placeholder="enter password">
+                <div class="error"></div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <label for="dobinput" class="form-label text">Date of Birth
+                </label>
+                <input type="date" id="dob" class="form-control rounded-3 select" placeholder="select date of birth" />
+                <div class="error"></div>
+              </div>
+
+              <div class="col-lg-6 mb-3">
+                <label for="gendrinput" class="form-label text">Gender</label>
+
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" />
+                    <label class="form-check-label select" for="exampleRadios1">
+                      Male
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female" />
+                    <label class="form-check-label select" for="exampleRadios2">
+                      Female
+                    </label>
+                  </div>
+                </div>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label for="addressinput" class="form-label text">Qualification
+                </label>
+                <input type="text" id="qualification" class="form-control rounded-3 select"
+                  placeholder="enter qualifications" />
+              </div>
+              <div class="error"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label for="addressinput" class="form-label text">Address
+                </label>
+                <input type="text" id="address" class="form-control rounded-3 select" placeholder="enter address" />
+              </div>
+              <div class="error"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <label for="contryinpt" class="form-label text">Country</label>
+
+                <select class="form-select option rounded-3 select" aria-label="Default select example" id="country">
+                  <option selected value="">select country</option>
+                  <option value="USA">USA</option>
+                  <option value="INDIA">INDIA</option>
+                  <option value="UAE">UAE</option>
+                </select>
+                <div class="error"></div>
+              </div>
+
+              <div class="col-lg-6 mb-3">
+                <label for="stateinpt" class="form-label text">State</label>
+
+                <select class="form-select option rounded-3 select" aria-label="Default select example" id="state">
+                  <option selected value="">select state</option>
+                  <option value="TX">TX</option>
+                  <option value="WA">WA</option>
+                  <option value="IL">IL</option>
+
+                </select>
+                <div class="error"></div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-2">
+                <label for="cityinpt" class="form-label text">City</label>
+                <input type="text" id="city" class="form-control rounded-3 select" placeholder="enter City" />
+                <div class="error"></div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <label for="pninpt" class="form-label text">Pin/Zip
+                </label>
+                <input type="text" id="pinzip" class="form-control rounded-3 select" placeholder="enter Pin/Zip " />
+                <div class="error"></div>
+              </div>
+
+              <div class="row p-0">
+                <div class="col-lg-12 my-4 ">
+                  <div class="card-btn  rounded-4">
+                    <div class="row p-0 ">
+                      <div class="col-lg-12 d-flex gap-2 p-0 justify-content-end">
+                        <button type="button" onclick="addformClose()" class="btn btn-lg rounded-4">Cancel</button>
+                        <button type="button" id="addbtn" class="btn btn-primary rounded-4">Add
+                          Employees</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
